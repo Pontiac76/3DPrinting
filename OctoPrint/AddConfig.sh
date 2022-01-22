@@ -7,7 +7,7 @@
 #
 # Next log into your OctoPrint directory and run this:
 #
-# wget https://raw.githubusercontent.com/Pontiac76/3DPrinting/main/OctoPrint/AddConfig.sh -o AddConfig.sh; chmod +x AddConfig.sh
+# wget https://raw.githubusercontent.com/Pontiac76/3DPrinting/main/OctoPrint/AddConfig.sh -O AddConfig.sh; chmod +x AddConfig.sh
 #
 # This will download THIS FILE you're reading.
 #
@@ -33,7 +33,7 @@ then
 fi
 
 echo "Downloading Yaml file"
-wget "https://raw.githubusercontent.com/Pontiac76/3DPrinting/main/OctoPrint/CustomControl.yaml" -o /tmp/CustomControl.yaml
+wget "https://raw.githubusercontent.com/Pontiac76/3DPrinting/main/OctoPrint/CustomControl.yaml" -O /tmp/CustomControl.yaml
 
 if [ ! -f /tmp/CustomControl.yaml ];
 then
