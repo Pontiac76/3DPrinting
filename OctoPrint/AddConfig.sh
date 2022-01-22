@@ -7,7 +7,7 @@
 #
 # Next log into your OctoPrint system, and run this from anywhere (Without the leading hash):
 #
-# rm AddConfig.sh; wget https://raw.githubusercontent.com/Pontiac76/3DPrinting/main/OctoPrint/AddConfig.sh -O AddConfig.sh; chmod +x AddConfig.sh
+# rm AddConfig.sh; wget https://raw.githubusercontent.com/Pontiac76/3DPrinting/main/OctoPrint/AddConfig.sh; chmod +x AddConfig.sh
 #
 # This will download THIS FILE you're reading.
 #
