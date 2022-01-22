@@ -1,5 +1,3 @@
-## Add the following to the ~/.octoprint/config.yaml file.  I found this directly under the API key
-
 controls:
 -   children:
     -   commands:
