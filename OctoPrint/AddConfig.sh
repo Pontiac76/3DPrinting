@@ -50,3 +50,4 @@ cat /tmp/CustomControl.yaml >> ~/.octoprint/config.yaml
 
 ## Should be done!
 echo "Installation complete!"
+> ~/.octoprint/AddedCustomControls.txt
