@@ -5,9 +5,9 @@
 #
 # First, install the CustomControl module inside OctoPrint or go to https://github.com/Salandora/octoprint-customControl and do a manual install.
 #
-# Next log into your OctoPrint directory and run this:
+# Next log into your OctoPrint system, and run this from anywhere (Without the leading hash):
 #
-# wget https://raw.githubusercontent.com/Pontiac76/3DPrinting/main/OctoPrint/AddConfig.sh -O AddConfig.sh; chmod +x AddConfig.sh
+# rm AddConfig.sh; wget https://raw.githubusercontent.com/Pontiac76/3DPrinting/main/OctoPrint/AddConfig.sh -O AddConfig.sh; chmod +x AddConfig.sh
 #
 # This will download THIS FILE you're reading.
 #
