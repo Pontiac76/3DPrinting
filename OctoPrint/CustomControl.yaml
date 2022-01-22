@@ -1,0 +1,64 @@
+## Add the following to the ~/.octoprint/config.yaml file.  I found this directly under the API key
+
+controls:
+-   children:
+    -   commands:
+        - G1 Z10 F3000
+        - G1 X0 Y0
+        - G1 Z0
+        name: Front Left
+    -   commands:
+        - G1 Z10 F3000
+        - G1 X220 Y0
+        - G1 Z0
+        name: Front Right
+    -   commands:
+        - G1 Z10 F3000
+        - G1 X220 Y220
+        - G1 Z0
+        name: Back Right
+    -   commands:
+        - G1 Z10 F3000
+        - G1 X0 Y220 F3000
+        - G1 Z0
+        name: Back Left
+    -   commands:
+        - G1 Z10 F3000
+        - G1 X110 Y110 F3000
+        - G1 Z0
+        name: Center on Plate
+    -   command: G1 Z110 X110 Y110 F3000
+        name: Center in Air
+    -   children:
+        -   commands:
+            - G1 Y220 F3000
+            - G1 Z200 F3000
+            confirm: null
+            name: Clean Bed
+        -   command: G1 X10 Y10 Z10 F3000
+            name: Near Home
+        -   command: G28
+            name: Re-Home
+        layout: horizontal
+        name: Maintenance
+    layout: horizontal
+    name: Levelling
+-   children:
+    -   command: M104 S225
+        confirm: null
+        name: Nozle On
+        width: '2'
+    -   command: M104 S0
+        confirm: null
+        name: Nozzle Off
+        width: '2'
+    -   command: M140 S60
+        confirm: null
+        name: Bed On
+        width: '2'
+    -   command: M140 S0
+        confirm: null
+        name: Bed Off
+        width: '2'
+    layout: horizontal_grid
+    name: Heating
