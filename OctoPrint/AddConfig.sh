@@ -42,7 +42,7 @@ then
 fi
 
 echo "Backing up exiting configuration file"
-cp -v ~/.octoprint/config.yaml ~/.octoprint/config.yaml.`date date +%Y-%m-%d-%H-%M-%S`
+cp -v ~/.octoprint/config.yaml ~/.octoprint/config.yaml.`date +%Y-%m-%d-%H-%M-%S`
 
 ## Add a blank space 'just in case'.  Shouldn't hurt anything.
 echo "" >> ~/.octoprint/config.yaml
